@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{   
+    background: hsl(185, 75%, 39%); 
+    align-items: center;
+    justify-items: center;   
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.backTop{
+    position: absolute;
+    top: -80%;
+    left: -30%;
+    
+}
+.backbottom{
+    position: absolute;
+    bottom: -90%;
+    right: -20%;
+    
+}
+.card{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background: #fff;
+    border-radius: 40px;
+    /* box-shadow: 2px 2px 10px #000; */
+
+}
+.img{
+    background-image: url(../images/bg-pattern-card.svg);
+    width: 100%;
+    padding: 40px 130px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    height: 20vh;
+    
+}
+.img img{
+    border-radius: 60px;
+    border: 5px solid #fff;
+    margin-top: 30px;
+}
+.title{
+    text-align: center;
+    margin-top: 22%;
+    color: #222;
+}
+.title h3{
+    color: #222;
+    font-family: 700;
+
+}
+.title h2 span{ 
+    color: hsl(0, 0%, 59%);
+    margin-left: 5px;
+    font-family: 400;
+
+}
+.title .heading p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 700;
+    padding: 20px 0;
+
+}
+
+.title ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.title ul li{
+    list-style: none;
+
+}
+.title ul li p{
+    padding: 10px;
+    color: #888;
+    font-weight: 400;
+}
+
+body .attribution{
+    position: fixed;
+    bottom: 0;
+    right: 42%;
+    background: #222;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+
+}
+body .attribution a{
+    text-decoration: none;
+    color: #666;
+}
+
+
+@media (max-width: 375px){
+    .backTop{
+        top: -105%;
+        left: -175%;
+        
+    }
+    .backbottom{
+        bottom: -94%;
+        right: -185%;
+        
+    }
+
+    .card{
+        left: 10%;
+        
+    }
+    .img{
+        background-image: url(../images/bg-pattern-card.svg);
+        width: 100%;
+        padding: 30px 95px;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        height: 20vh;
+        
+    }
+    body .attribution{
+        
+        right: 10%;
+        
+    }
+}
+
+
+@media (max-width: 1440px){
+    .backTop{
+        top: -80%;
+        left: -30%;
+        
+    }
+    .backbottom{
+        bottom: -90%;
+        right: -20%;
+        
+    }    
+    body .attribution{        
+        right: 35%;
+        font-size: 1.1em;        
+    }
+    
+}
+@media (max-width: 1024px){
+    .backTop{
+        top: -55%;
+        left: -21%;
+        
+    }
+    .backbottom{
+        bottom: -62%;
+        right: -12%;
+        
+    }
+    
+    body .attribution{
+        right: 35%;
+        font-size: 1em;
+    }
+    
+}
